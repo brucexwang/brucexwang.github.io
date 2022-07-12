@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--<meta name="description" content="">-->
+        <!--<meta name="author" content="">-->
+	    
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a5f3a1ad43.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>$(function(){
+          $("#headerbar").load("header.html", function(){
+            var pathname = window.location.pathname;
+            $('#colnavbar > ul > li > a[href="'+pathname+'"]').parent().addClass("active");
+           });
+           $("#footerbar").load("footer.html");
+         });</script>
+	<title>Bruce X. Wang</title>
+    </head>
+    <div id="headerbar"></div>
+    <body>
+        <!-- Responsive navbar-->
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">Bruce X. Wang</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/research.html">RESEARCH</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/teaching.html">TEACHING</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/education.html">EDUCATION</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
+	    
+	    
+        <!-- Header - set the background image for the header in the line below-->
+        <!-- <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">-->
+        <header class="py-6 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1290&q=80')">
+        </header>
