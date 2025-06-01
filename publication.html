@@ -70,20 +70,79 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Publication data structure
-        const publications = [
-            {
-                year: 2024,
-                type: "journal",
-                title: "Balancing validity and reliability as a function of sampling variability in forensic voice comparison",
-                authors: "Wang, B. X. & Hughes, V.",
-                venue: "Science & Justice",
-                link: "https://example.com",
-                abstract: "Detailed abstract text here...",
-                badges: ["Forensic Phonetics", "Methodology"]
-            },
-            // Add all other publications in this format
-            // ...
-        ];
+       const publications = [
+    // 2025 Journal Articles
+    {
+        year: 2025,
+        type: "conference",
+        title: "A Multimodal Chinese Dataset for Cross-Lingual Sarcasm Detection",
+        authors: "Gao, X. Y., Wang, B. X., Zhang, M., Huang, S. M., Zhu, L., Nayak, S. & Coler, M.",
+        venue: "Proceedings of INTERSPEECH 2025, Rotterdam, The Netherlands",
+        badges: ["Multimodal Analysis", "Sarcasm Detection"]
+    },
+
+    // 2024 Journal Articles
+    {
+        year: 2024,
+        type: "journal",
+        title: "Balancing validity and reliability as a function of sampling variability in forensic voice comparison",
+        authors: "Wang, B. X. & Hughes, V.",
+        venue: "Science & Justice 64(6), 649–659",
+        link: "https://doi.org/10.1016/j.scijus.2024.10.002",
+        badges: ["Forensic Phonetics", "Methodology"]
+    },
+    {
+        year: 2024,
+        type: "journal",
+        title: "English prosodic focus marking by Cantonese trilingual children with and without autism spectrum disorder",
+        authors: "Wang, B. X., Chen, S., Zhou, F., Chan, A. & Tang, T.",
+        venue: "Journal of Speech, Language, and Hearing Research, 1-20",
+        link: "https://doi.org/10.1044/2023_JSLHR-23-00508",
+        badges: ["Autism Research", "Prosody"]
+    },
+    // Add all other 2024 entries following same pattern...
+
+    // 2023
+    {
+        year: 2023,
+        type: "journal",
+        title: "Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses",
+        authors: "Coretta, S., Casillas, J. V., Roessig, S., [...] Wang, B. X. & Wood, A.",
+        venue: "Advances in Methods and Practices in Psychological Sciences",
+        badges: ["Methodology", "Speech Analysis"]
+    },
+
+    // 2022
+    {
+        year: 2022,
+        type: "journal",
+        title: "The effect of sampling variability on overall performance and individual speakers' behaviour in likelihood ratio-based forensic voice comparison",
+        authors: "Wang, B. X.",
+        venue: "International Journal of Speech, Language and the Law 29(1), 99–103",
+        link: "https://doi.org/10.1558/ijsll.23731",
+        badges: ["Forensic Phonetics", "Sampling Variability"]
+    },
+    // Continue adding all entries...
+
+    // Conference Presentations
+    {
+        year: 2025,
+        type: "presentation",
+        title: "A new resource for Cantonese Forensic Voice Comparison",
+        authors: "Wang, B. X., Huang, S. M. & He, L.",
+        venue: "33rd International Association for Forensic Phonetics & Acoustics, The Hague",
+        badges: ["Resource Development", "Cantonese"]
+    },
+    {
+        year: 2024,
+        type: "presentation",
+        title: "Beyond Accuracy: Prioritising Reliability to Reduce the Risk of Miscarriages of Justice in Forensic Voice Comparison",
+        authors: "Wang, B. X. & Hughes, V.",
+        venue: "14th International Conference on Applied Linguistics, Hong Kong",
+        badges: ["Forensic Ethics", "Reliability"]
+    },
+    // Add all presentation entries...
+];
 
         // Generate HTML for publications
         function renderPublications(filter = 'all') {
