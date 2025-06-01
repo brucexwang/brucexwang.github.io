@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Use same head section as your research.html -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Research projects led by Bruce X. Wang" />
-    <meta name="author" content="" />
-    <title>Bruce X. Wang - Research Projects</title>
-    <!-- Include same CSS and scripts as research.html -->
-</head>
+<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bruce X. Wang</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a5f3a1ad43.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>$(function(){
+          $("#headerbar").load("header.html", function(){
+            var pathname = window.location.pathname;
+            $('#colnavbar > ul > li > a[href="'+pathname+'"]').parent().addClass("active");
+           });
+           $("#footerbar").load("footer.html");
+         });</script>
+    </head>
+    
 <body>
     <!-- Load header using your existing script -->
     <div id="headerbar"></div>
