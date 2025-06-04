@@ -11337,6 +11337,7 @@ textarea.form-control-lg {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+
 /* Background image handling */
 .bg-image-full {
     background-size: cover;
@@ -11346,4 +11347,24 @@ textarea.form-control-lg {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* styles.css */
+.quote-container {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.quote-text {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.author-text {
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
