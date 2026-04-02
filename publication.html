@@ -51,7 +51,7 @@
         <div class="mb-4">
             <div class="btn-group" role="group" aria-label="Publication filters">
                 <button type="button" class="btn btn-outline-dark active" data-filter="all">All</button>
-                <button type="button" class="btn btn-outline-dark" data-filter="Forthcoming">Accepted / In press / Forthcoming</button>
+                <button type="button" class="btn btn-outline-dark" data-filter="Under review">Accepted / In press / Forthcoming</button>
                 <button type="button" class="btn btn-outline-dark" data-filter="journal">Journal Articles</button>
                 <button type="button" class="btn btn-outline-dark" data-filter="conference">Conference Proceedings</button>
                 <button type="button" class="btn btn-outline-dark" data-filter="presentation">Presentations</button>
@@ -76,49 +76,49 @@
         // Accepted / In press / Forthcoming
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "Automated Measurement of Geniohyoid Muscle Thickness During Speech Using Deep Learning and Ultrasound",
         authors: "Myrgyyassov, A., Wang, B. X., Sun, Y., Huang, S. M., Song, Z., Wong, N. M., Zheng, Y. P.",
         venue: "Interspeech, 2026 (under review)"
     },
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "Geniohyoid Muscle Variation in Articulation: A Pilot Ultrasound Study of Healthy and Parkinson’s Disease Speakers",
         authors: "Wang, B. X., Myrgyyassov, A., Sun, Y., Wong, N. M., Wang, S. Y., Huang, S. M., Zheng, Y. P.",
         venue: "Journal of Speech, Language, and Hearing Research (under review)"
     },
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "Validation of an embedding-based forensic voice comparison system using short speech samples in Chinese languages",
         authors: "Wang, B. X., Zhang, C. L. & Chan, R.",
         venue: "Forensic Science International (under review)"
     },
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "Evidential Value of Cantonese Filled Pause in Forensic Voice Comparison – A comparison between acoustic phonetic and automatic speaker recognition systems",
         authors: "Wang, B. X., Ma, M. K. H. & Huang, S. M.",
         venue: "Journal of Phonetics (under review)"
     },
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "Codec-induced Mismatch, Speech Duration, and Speaker-dependent Effect in a DNN-based Forensic Speaker Recognition System",
         authors: "Deng, G. M., Wang, B. X. & Hughes, V.",
         venue: "Interspeech (under review)"
     },
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "Acoustic and articulatory variability among Hong Kong Cantonese speakers",
         authors: "Wang, B. X., He, L. & Wong, M. N.",
         venue: "Humanities & Social Sciences Communications (under review)"
     },
     {
         year: 2026,
-        type: "Forthcoming",
+        type: "Under review",
         title: "UltraUNet: Real-Time Ultrasound Tongue Segmentation for Diverse Linguistic and Imaging Conditions",
         authors: "Myggassov, A., Song, Z., Sun, Y., Wang, B. X., Wong, M. N. & Zheng, Y. P.",
         venue: "IEEE Journal of Biomedical and Health Informatics (to appear)"
@@ -539,7 +539,7 @@ function renderPublications(filter = 'all') {
         .filter(pub => filter === 'all' || pub.type === filter)
         .forEach(pub => {
             // Special header for accepted / in press / forthcoming
-            if (pub.type === 'accepted') {
+            if (pub.type === 'Under review') {
                 if (!acceptedHeaderRendered) {
                     acceptedHeaderRendered = true;
                     container.innerHTML += `
