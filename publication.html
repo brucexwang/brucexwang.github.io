@@ -51,7 +51,7 @@
         <div class="mb-4">
             <div class="btn-group" role="group" aria-label="Publication filters">
                 <button type="button" class="btn btn-outline-dark active" data-filter="all">All</button>
-                <button type="button" class="btn btn-outline-dark" data-filter="Under review">Accepted / In press / Forthcoming</button>
+                <button type="button" class="btn btn-outline-dark" data-filter="Under review">Manuscripts under Review & In Preparation</button>
                 <button type="button" class="btn btn-outline-dark" data-filter="journal">Journal Articles</button>
                 <button type="button" class="btn btn-outline-dark" data-filter="conference">Conference Proceedings</button>
                 <button type="button" class="btn btn-outline-dark" data-filter="presentation">Presentations</button>
@@ -73,7 +73,7 @@
         // Publication data structure
       const publications = [
 
-        // Accepted / In press / Forthcoming
+        // Manuscripts under Review & In Preparation
     
     {
         year: 2026,
@@ -635,13 +635,13 @@ function renderPublications(filter = 'all') {
         .sort((a, b) => b.year - a.year)
         .filter(pub => filter === 'all' || pub.type === filter)
         .forEach(pub => {
-            // Special header for accepted / in press / forthcoming
+            // Special header for Manuscripts under Review & In Preparation
             if (pub.type === 'Under review') {
                 if (!acceptedHeaderRendered) {
                     acceptedHeaderRendered = true;
                     container.innerHTML += `
                         <div class="year-header">
-                            <h2 class="my-3">Accepted / In press / Forthcoming</h2>
+                            <h2 class="my-3">Manuscripts under Review & In Preparation</h2>
                         </div>`;
                 }
             } else {
