@@ -363,6 +363,7 @@
         title: "Vowel-dependent Modulation of Geniohyoid Thickness in Mandarin: An ultrasound imaging study",
         authors: "Wang, B. X., Huang, S. M., Myrgyyassov, A., Sun, Y., Zheng, Y. P. & Wong, N. M.",
         link: "https://www.researchgate.net/publication/414599434_Vowel-Dependent_Modulation_of_Geniohyoid_Thickness_in_Mandarin_An_ultrasound_imaging_study",
+        linkText: "Slides",
         venue: "Oral presentation at the 6th International Symposium on Applied Phonetics. Hiroshima, 14-16 September, 2026"
     },
 
@@ -689,7 +690,7 @@ function renderPublications(filter = 'all') {
 
                         <div class="d-flex gap-2">
                             ${pub.link ? `<a href="${pub.link}" class="btn btn-sm btn-outline-dark" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Full Text
+                                <i class="fas fa-external-link-alt"></i> ${pub.linkText || 'Full Text'}
                             </a>` : ''}
 
                             ${pub.abstract ? `<button class="btn btn-sm btn-link abstract-toggle" 
